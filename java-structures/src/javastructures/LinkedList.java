@@ -23,6 +23,15 @@ public class LinkedList {
         head = new Node(value, head);
         size++;
     }
+    
+    public Object pop() {
+        if (head == null)
+            return null;
+        Object data = head.value;
+        head = head.next;
+        size--;
+        return data;
+    }
 
     /**
      * @return the size

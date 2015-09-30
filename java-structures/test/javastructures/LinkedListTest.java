@@ -50,6 +50,16 @@ public class LinkedListTest {
         // TODO review the generated test code and remove the default call to fail.
         assertEquals(1, instance.getSize());
     }
+    
+    @Test
+    public void testPop() {
+        System.out.println("testPop");
+        LinkedList instance = new LinkedList();
+        instance.add(new Integer(5));
+        Object data = instance.pop();
+        assertEquals(5, data);
+        assertEquals(0, instance.getSize());
+    }
 
     /**
      * Test of getSize method, of class LinkedList.
